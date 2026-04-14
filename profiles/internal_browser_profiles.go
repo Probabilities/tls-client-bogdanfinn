@@ -120,7 +120,7 @@ var Chrome_146_Updated = ClientProfile{
     clientHelloId: tls.ClientHelloID{
         Client:               "Chrome",
         RandomExtensionOrder: false,
-        Version:              "146",
+        Version:              "146_Updated",
         Seed:                 nil,
         SpecFactory: func() (tls.ClientHelloSpec, error) {
             return tls.ClientHelloSpec{
