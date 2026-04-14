@@ -315,6 +315,8 @@ func getTlsClient(requestInput RequestInput, sessionId string, withSession bool)
 		clientProfile = getTlsClientProfile(tlsClientIdentifier)
 	}
 
+	fmt.Printf("Using profile '%s'", clientProfile)
+
 	timeoutOption := tls_client.WithTimeoutSeconds(tls_client.DefaultTimeoutSeconds)
 
 	if requestInput.TimeoutSeconds != 0 {
